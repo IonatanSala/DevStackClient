@@ -1,0 +1,60 @@
+.create-story-container
+
+  .story-heading
+    margin-bottom: 1rem
+    text-transform: capitalize
+
+.story-types
+  margin-top: 3rem
+
+
+
+  .story-type
+    position: relative
+    z-index: 1
+    border-radius: 5px
+    border: 1px solid #eee
+    cursor: pointer
+    padding: 3rem 1.5rem
+    display: flex
+    justify-content: space-between
+    align-items: center
+    opacity: .7
+
+    i
+      font-size: 3rem
+      font-weight: normal
+
+    .story-type-info
+      margin-left: 1rem
+      align-self: flex-end
+
+      h3
+        font-size: 1.2rem
+        font-weight: normal
+        text-transform: capitalize
+
+
+    &:hover
+      opacity: 1
+
+    &.active-story-type
+      border-color: #108EE9
+      opacity: 1
+
+      i
+        color: #108EE9
+
+.steps-action
+  margin-top: 2rem
+
+
+.story-form
+  padding: 2rem 0 0 0
+
+  label
+    font-weight: bold
+
+  .ant-calendar-picker
+
+    width: 100%

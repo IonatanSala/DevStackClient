@@ -1,0 +1,41 @@
+@import "./dashboard_header/dashboard_header.sass"
+@import "./dashboard_sidemenu/dashboard_sidemenu.sass"
+@import "./stories/create_story/story-form.sass"
+@import "./stories/stories_list/stories-list.sass"
+@import "./home/profile.sass"
+@import "./opportunities/opportunities"
+
+$sidemenu_color: white
+$header_color: white
+$main_color_dash: #F1F3F7
+
+.dashboard
+  height: 100%
+  width: 100%
+
+  display: flex
+  flex-flow: column nowrap
+  justify-content: flex-start
+  align-items: flex-start
+
+  .dashboard-header
+    background-color: $header_color
+    height: 4rem
+    width: 100%
+
+  .dashboard-content
+    width: 100%
+    display: flex
+    flex: 1
+
+    .dashboard-sidemenu
+      background-color: $sidemenu_color
+      height: 100%
+      width: 5rem
+
+    .dashboard-main
+      flex: 1
+      min-height : 100%
+      overflow: scroll
+      background-color: $main_color_dash
+      padding: 2rem 2rem

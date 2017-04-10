@@ -1,0 +1,133 @@
+.auth-container
+  width: 100%
+  min-height: 100%
+  background-color: #F6F9FC
+
+  display: flex
+  justify-content: center
+  align-items: center
+
+  .auth-logo
+
+    img
+      width: 100px
+      position: absolute
+      left: 1.5rem
+      top: 1rem
+
+
+
+  .auth-card
+    width: 45em
+    padding: 1.5em 2.8em 2.8em 2.8em
+
+    input
+      height: 3.8em
+
+    button
+      margin-right: 5px
+
+    .auth-card-header
+      display: flex
+      flex-flow: column nowrap
+      justify-content: space-between
+      align-items: center
+      margin-bottom: 2em
+
+      img
+        width: 8em
+
+      h2
+        margin-top: 2em
+        font-weight: 400
+        font-size: 1.3rem
+
+  .auth-card-signup
+    width: 50rem
+
+.select-signup-type
+  display: flex
+  flex-flow: row wrap
+  justify-content: space-between
+  align-items: stretch
+
+  margin: 2rem 0
+
+  .signup-card
+    margin: .25rem
+    flex: 1
+    opacity: .6
+    transition: .25s
+    min-width: 15em
+
+    &.active-signup-card
+      opacity: 1
+      transition: .25s
+
+
+    .ant-card-body
+      padding: 0
+
+      display: flex
+      flex-flow: column nowrap
+      align-items: stretch
+
+      header
+        flex: 1
+        padding: 2rem 0
+        background-color: #F8F9FB
+        height: 10rem
+
+        display: flex
+        align-items: center
+        justify-content: center
+
+        img
+          width: 25%
+
+      section
+        display: flex
+        flex-flow: column nowrap
+        justify-content: flex-start
+        align-items: center
+        padding: 1rem
+
+        h1
+          font-weight: 400
+          font-size: 1.1rem
+          margin-bottom: .3rem
+
+        p
+          text-align: center
+          margin-bottom: 1.5rem
+          opacity: .8
+          font-weight: 100
+
+        label
+          cursor: pointer
+          padding: .4rem 1rem
+          border: 1px solid $black
+          border-radius: 5px
+
+          display: flex
+          align-items: center
+          transition: .25s
+
+          &.active-signup-select
+            border-color: $success-color
+            background: $success-color
+            color: white
+            font-weight: bold
+
+            i
+              margin-left: 5px
+              font-size: .9rem
+
+
+
+          &:hover
+            opacity: .9
+
+.have-acc
+  margin-top: 1rem
+  opacity: .6

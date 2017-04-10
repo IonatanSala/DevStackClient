@@ -1,0 +1,135 @@
+.landing-page-container
+  padding: 0
+  margin: 0
+
+  .landing-page-main
+
+    .jumbotron
+      background: linear-gradient(to bottom, rgba(255, 255, 255, .90), rgba(255, 255, 255, 1)), url('./components/landing-page/landing1.jpg') center center
+      background-size: cover
+      background-repeat: no-repeat
+      // height: 100vh
+      width: 100vw
+      border-bottom: 1px solid #E9E9E9
+
+      display: flex
+      flex-flow: column nowrap
+      justify-content: flex-start
+      align-items: stretch
+
+      .jumbotron-content
+        flex: 1
+        display: flex
+        flex-flow: row wrap
+        justify-content: space-around
+        align-items: center
+        padding: 10px
+        padding-top: 4rem
+        padding-bottom: 4rem
+
+        .jumbotron-text
+          display: flex
+          flex-flow: column nowrap
+          justify-content: flex-start
+          align-items: center
+          padding-bottom: 2rem
+
+          div
+            margin-top: .9rem
+
+          h3
+            font-size: 3.8vw
+            font-weight: 700
+            text-shadow: 1px 2px 2px rgba(0,0,0,0.2)
+          a
+            margin-top: 10px
+
+
+        .jumbotron-img
+
+          img
+            height: 350px
+
+
+      .landing-page-header
+        padding: .75rem 1.5rem
+
+        .landing-page-nav
+          display: flex
+          justify-content: space-between
+          align-items: center
+
+          .left-nav
+
+            img
+              height: 25px
+
+          .right-nav
+
+            .landing-page-link
+              padding: .5rem 1rem
+              font-size: .8rem
+              font-weight: normal
+              transition: .25s
+              margin-left: .5rem
+
+
+              color: #444343
+
+              &:hover
+                color: #108EE9
+
+
+              &.sign-up-link
+                border-radius: 5px
+                color: #108EE9
+                background-color: #108EE9
+                color: white
+                font-weight: bold
+                // background-color: #E7F5FE
+
+                &:hover
+                  opacity: .9
+
+
+
+              &.employer-sign-up
+
+  .landing-page-footer
+
+
+.get-started-jumbotron
+  padding: .75rem 1.2rem
+  border-radius: 5px
+
+  background-color: #E7F5FE
+  font-weight: 400
+  font-size: 1rem
+  background-color: #108EE9
+  border: 2px solid #108EE9
+  color: white
+  font-weight: bold
+
+
+  &:hover
+    color: white
+    opacity: .9
+
+.get-started-jumbotron-sign-in
+  background-color: transparent
+  border: 2px solid #108EE9
+  color: #108EE9
+
+  &:hover
+    color: #108EE9 - 10
+
+
+.landing-page-job-list
+  background-color: #F6F9FC
+  padding: 2rem 1rem
+
+  .land-page-job-title
+    margin-bottom: 2rem
+
+    h1
+      border-bottom: 1px solid #E9E9E9
